@@ -1,0 +1,20 @@
+{
+    "name": "plante-tree-server",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "bcryptjs": "2.4.3",
+        "connect-mongo": "5.1.0",
+        "cookie-parser": "1.4.6",
+        "cors": "2.8.5",
+        "dotenv": "16.4.5",
+        "express": "4.19.2",
+        "express-session": "1.18.1",
+        "mongoose": "8.5.1",
+        "ws": "8.18.0"
+    }
+}

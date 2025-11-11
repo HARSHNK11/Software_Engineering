@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant-E-Tree • Maintenance Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Plant-E-Tree" class="logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="buyer.html">Buyer</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero card">
+            <h1>Maintenance Services</h1>
+            <p>Browse service packages and schedule an appointment.</p>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+            <div class="section-title">Available Packages</div>
+            <div id="services" class="grid"></div>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+            <div class="section-title">Book a Service</div>
+            <div class="form-row" style="grid-template-columns: 1fr 1fr 140px;">
+                <input id="svc-code" class="input" placeholder="Service Code">
+                <input id="svc-date" class="input" type="date">
+                <button id="svc-book" class="btn">Book</button>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+            <div class="section-title">Your Appointments</div>
+            <div id="appointments"></div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <img src="logo_footer.png" class="footer-logo" alt="">
+            </div>
+            <div class="footer-right">
+                <span class="badge">Services</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

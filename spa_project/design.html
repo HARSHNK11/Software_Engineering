@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant-E-Tree • Garden Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Plant-E-Tree" class="logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero card">
+            <h1>Garden Design</h1>
+            <p>Get inspired with templates and book a consultation.</p>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+            <div class="section-title">Inspiration Gallery</div>
+            <div class="design-gallery">
+                <div class="card">
+                    <img src="New-Aesthetic-Plant-Background.jpg" alt="Modern Minimal Garden Design">
+                    <h3>Modern Minimal</h3>
+                </div>
+                <div class="card">
+                    <img src="OIP.jpeg" alt="Tropical Breeze Garden Design">
+                    <h3>Tropical Breeze</h3>
+                </div>
+                <div class="card">
+                    <img src="2870189.jpg" alt="Zen Retreat Garden Design">
+                    <h3>Zen Retreat</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+            <div class="section-title">Book Consultation</div>
+            <div class="form-row" style="grid-template-columns: 1fr 1fr 1fr 140px;">
+                <input id="c-name" class="input" placeholder="Your Name">
+                <input id="c-email" class="input" placeholder="Email">
+                <input id="c-date" class="input" type="date">
+                <button class="btn" id="c-book">Book</button>
+            </div>
+            <div id="c-status" style="margin-top:.6rem; color: var(--green-700);"></div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <img src="logo_footer.png" class="footer-logo" alt="">
+            </div>
+            <div class="footer-right">
+                <span class="badge">Design</span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const statusEl = document.getElementById('c-status');
+        const btn = document.getElementById('c-book');
+        if (btn) btn.onclick = () => {
+            statusEl.textContent = 'Consultation request sent! We will email you shortly.';
+        };
+    </script>
+</body>
+
+</html>

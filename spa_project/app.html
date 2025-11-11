@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant-E-Tree App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Plant-E-Tree Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#buyer">Buyer</a></li>
+            <li><a href="#vendor">Vendor</a></li>
+            <li><a href="#admin">Admin</a></li>
+                <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="buyer" class="columns">
+            <div class="column">
+                <h2>Buyer</h2>
+                <div>
+                    <input id="buyer-email" placeholder="Email">
+                    <input id="buyer-pass" type="password" placeholder="Password">
+                    <button id="buyer-register">Register</button>
+                    <button id="buyer-login">Login</button>
+                    <button id="buyer-logout">Logout</button>
+                </div>
+                <h3>Products</h3>
+                <div id="products"></div>
+                <h3>Cart</h3>
+                <div id="cart"></div>
+                <button id="checkout">Checkout</button>
+                <h3>Orders</h3>
+                <div id="orders"></div>
+            </div>
+        </section>
+        <section id="vendor" class="columns">
+            <div class="column">
+                <h2>Vendor</h2>
+                <div>
+                    <input id="vendor-email" placeholder="Email">
+                    <input id="vendor-pass" type="password" placeholder="Password">
+                    <button id="vendor-register">Register</button>
+                    <button id="vendor-login">Login</button>
+                    <button id="vendor-logout">Logout</button>
+                </div>
+                <h3>Add Product</h3>
+                <input id="pname" placeholder="Name">
+                <input id="pprice" placeholder="Price" type="number">
+                <input id="pstock" placeholder="Stock" type="number">
+                <input id="pdesc" placeholder="Description">
+                <button id="add-product">Add</button>
+                <h3>Your Inventory</h3>
+                <div id="inventory"></div>
+                <h3>Orders</h3>
+                <div id="vorders"></div>
+            </div>
+        </section>
+        <section id="admin" class="columns">
+            <div class="column">
+                <h2>Admin</h2>
+                <div id="admin-auth-section">
+                    <p style="color: var(--muted); margin-bottom: 0.8rem;">Please login to access admin features</p>
+                    <a href="login.html" class="btn">Go to Login</a>
+                    <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">
+                        Admin: admin@plante-tree.local / Admin123!
+                    </p>
+                </div>
+                <div id="admin-logged-in" style="display: none;">
+                    <p id="admin-user-info" style="color: var(--green-700); margin-bottom: 0.8rem;"></p>
+                    <button id="admin-logout" class="btn secondary">Logout</button>
+                </div>
+                <h3>Users</h3>
+                <div id="users"></div>
+            </div>
+        </section>
+        <section id="dm" class="columns">
+            <div class="column">
+                <h2>Direct Messages</h2>
+                <div>
+                    <input id="toId" placeholder="To User ID">
+                    <input id="message" placeholder="Message">
+                    <button id="send">Send</button>
+                </div>
+                <div id="dm-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <img src="logo_footer.png" alt="Plant-E-Tree Logo" class="footer-logo">
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Plant-E-Tree. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/plantImages.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+

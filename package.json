@@ -1,0 +1,11 @@
+{
+    "name": "plant-e-tree",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "node start.js",
+        "dev": "cd server && npm run dev",
+        "test:seed": "cd server && npm run test:seed",
+        "install": "cd server && npm install"
+    }
+}
